@@ -1,2 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<phrases/>
+<phrases>
+  <phrase title="custom_bb_code_desc.table" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[]]></phrase>
+  <phrase title="custom_bb_code_desc.td" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[]]></phrase>
+  <phrase title="custom_bb_code_desc.th" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[]]></phrase>
+  <phrase title="custom_bb_code_desc.tr" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[]]></phrase>
+  <phrase title="custom_bb_code_example.table" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[]]></phrase>
+  <phrase title="custom_bb_code_example.td" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[]]></phrase>
+  <phrase title="custom_bb_code_example.th" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[]]></phrase>
+  <phrase title="custom_bb_code_example.tr" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[]]></phrase>
+  <phrase title="custom_bb_code_output.table" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[]]></phrase>
+  <phrase title="custom_bb_code_output.td" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[]]></phrase>
+  <phrase title="custom_bb_code_output.th" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[]]></phrase>
+  <phrase title="custom_bb_code_output.tr" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[]]></phrase>
+  <phrase title="custom_bb_code_title.table" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[Table]]></phrase>
+  <phrase title="custom_bb_code_title.td" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[Table data]]></phrase>
+  <phrase title="custom_bb_code_title.th" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[Table header]]></phrase>
+  <phrase title="custom_bb_code_title.tr" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[Table row]]></phrase>
+</phrases>

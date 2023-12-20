@@ -1,2 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bb_codes/>
+<bb_codes>
+  <bb_code bb_code_id="table" bb_code_mode="replace" has_option="optional" trim_lines_after="10" plain_children="0" disable_smilies="0" disable_nl2br="1" disable_autolink="0" allow_empty="0" allow_signature="0" active="0">
+    <replace_html><![CDATA[<div class="bbTable">
+	<table {option}>{text}</table>
+</div>]]></replace_html>
+    <replace_html_email><![CDATA[]]></replace_html_email>
+    <replace_text><![CDATA[]]></replace_text>
+  </bb_code>
+  <bb_code bb_code_id="td" bb_code_mode="replace" has_option="optional" trim_lines_after="10" plain_children="0" disable_smilies="0" disable_nl2br="1" disable_autolink="0" allow_empty="0" allow_signature="0" active="0">
+    <replace_html><![CDATA[<td {option}>{text}</td>]]></replace_html>
+    <replace_html_email><![CDATA[]]></replace_html_email>
+    <replace_text><![CDATA[]]></replace_text>
+  </bb_code>
+  <bb_code bb_code_id="th" bb_code_mode="replace" has_option="optional" trim_lines_after="10" plain_children="0" disable_smilies="0" disable_nl2br="1" disable_autolink="0" allow_empty="0" allow_signature="1" active="0">
+    <replace_html><![CDATA[<th {option}>{text}</th>]]></replace_html>
+    <replace_html_email><![CDATA[]]></replace_html_email>
+    <replace_text><![CDATA[]]></replace_text>
+  </bb_code>
+  <bb_code bb_code_id="tr" bb_code_mode="replace" has_option="optional" trim_lines_after="1" plain_children="0" disable_smilies="0" disable_nl2br="1" disable_autolink="0" allow_empty="0" allow_signature="0" active="0">
+    <replace_html><![CDATA[<tr {option}>{text}</tr>]]></replace_html>
+    <replace_html_email><![CDATA[]]></replace_html_email>
+    <replace_text><![CDATA[]]></replace_text>
+  </bb_code>
+</bb_codes>
