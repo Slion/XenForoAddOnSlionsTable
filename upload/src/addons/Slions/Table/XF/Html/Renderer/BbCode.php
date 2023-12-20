@@ -66,19 +66,17 @@ class BbCode extends XFCP_BbCode
 		// Somehow that was removed from XenForo 2.2.4 
 		//$text = $this->renderCss($tag, $text);
 
-		$id = $tag->attribute('colspan');
+		$colspan = $tag->attribute('colspan');
 		// As BB code are usually displayed in uppercase	
-		$tagName = strtoupper($tag->tagName());		
+		$tagName = strtoupper($tag->tagName());
 
-		// rtrim because there was one extra newline
-		// Seems to be only an issue when some CSS BB code is applied like CENTER or LEFT
-		if (empty($id))
+		if (empty($colspan))
 		{
-			return '[' . $tagName . "]" . rtrim($text) . "[/". $tagName ."]";
+			return '[' . $tagName . "]" . $text . "[/". $tagName ."]";
 		}
 		else
 		{
-			return '[' . $tagName . ' colspan=\'' . $id . "']" . retrim($text) . "[/". $tagName ."]";
+			return '[' . $tagName . ' colspan=\'' . $colspan . "']" . $text . "[/". $tagName ."]";
 		}		
 	}
 

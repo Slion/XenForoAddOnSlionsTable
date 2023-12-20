@@ -39,6 +39,9 @@ class Html extends XFCP_Html
 	*/
 
 
+    /**
+	 * Add support for cell options such as colspan
+	 */
 	protected function renderTableCell(array $tag, array $options)
 	{
 		//\XF::dump("renderTableCell");	
@@ -49,6 +52,7 @@ class Html extends XFCP_Html
 		$cellOptions = "";
 		if (is_array($tag['option'])) {
 			// Build our HTML attribute such as colspan
+			// TODO: restrict to some attributes as with this one could inject JavaScript maybe
 			foreach ($tag['option'] as $key => $value) {				
 				$cellOptions = "$key='$value' ";				
 			}
