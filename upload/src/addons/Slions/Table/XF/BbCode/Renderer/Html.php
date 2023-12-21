@@ -54,7 +54,7 @@ class Html extends XFCP_Html
 			// Build our HTML attribute such as colspan
 			// TODO: restrict to some attributes as with this one could inject JavaScript maybe
 			foreach ($tag['option'] as $key => $value) {				
-				$cellOptions = "$key='$value' ";				
+				$cellOptions .= "$key='$value' ";				
 			}
 			//$cellOptions = implode(' ', $tag['option']);
 		}

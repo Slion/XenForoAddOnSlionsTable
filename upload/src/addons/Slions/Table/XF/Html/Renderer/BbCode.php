@@ -36,7 +36,8 @@ class BbCode extends XFCP_BbCode
 		if (!$this->modded)
 		{
 			$this->modded = true;
-			$this->_handlers['td'] = ['filterCallback' => ['$this', 'handleTagTD']];
+			$this->_handlers['td'] = ['filterCallback' => ['$this', 'handleTagTableCell']];
+			$this->_handlers['th'] = ['filterCallback' => ['$this', 'handleTagTableCell']];
 			//$this->_handlers['td'] = ['filterCallback' => __NAMESPACE__ . '\BbCode::handleTagTD'];
 
 		}
@@ -54,7 +55,7 @@ class BbCode extends XFCP_BbCode
 	 *
 	 * @return string
 	 */
-	public function handleTagTD($text, \XF\Html\Tag $tag)
+	public function handleTagTableCell($text, \XF\Html\Tag $tag)
 	{
 		//\XF::logError("handleTagTD - " . get_class($this));
 
@@ -67,21 +68,12 @@ class BbCode extends XFCP_BbCode
 		//$text = $this->renderCss($tag, $text);
 
 		$colspan = $tag->attribute('colspan');
+		$rowspan = $tag->attribute('rowspan');
 		// As BB code are usually displayed in uppercase	
 		$tagName = strtoupper($tag->tagName());
 
-		if (empty($colspan))
-		{
-			return '[' . $tagName . "]" . $text . "[/". $tagName ."]";
-		}
-		else
-		{
-			return '[' . $tagName . ' colspan=\'' . $colspan . "']" . $text . "[/". $tagName ."]";
-		}		
+		return "[$tagName" . (empty($colspan)?"":" colspan='$colspan'") . (empty($rowspan)?"":" rowspan='$rowspan'") . "]$text" . "[/$tagName]";
 	}
-
-
-
 
 }
 
