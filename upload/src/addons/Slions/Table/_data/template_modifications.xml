@@ -1,2 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<template_modifications/>
+<template_modifications>
+  <modification type="public" template="editor" modification_key="slions_table_editor" description="Enable table editor buttons" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<!--[XF:include_js]-->]]></find>
+    <replace><![CDATA[<xf:js>
+$(document).on('editor:config', function( aEvent, aConfig, aEditor) {
+	//console.log(aConfig);
+	// Check before adding it otherwise we can accumulate them
+	if (!aConfig.tableEditButtons.includes('tableCells'))
+	{
+		// Add button to merge and split cells using colspan and rowspan
+		aConfig.tableEditButtons.push('tableCells');
+	}
+});	
+</xf:js>	
+<!--[XF:include_js]-->]]></replace>
+  </modification>
+</template_modifications>
