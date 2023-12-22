@@ -15,6 +15,7 @@ Download from [XenForo.com].
 - Add WYSIWYG table editor cell background button to change cell color
 - Add WYSIWYG table editor resizing handle
 - Add WYSIWYG table editor style button: dashed borders and alternate rows
+- Responsive design: force table width to 100% on narrow screens
 
 # Usage
 

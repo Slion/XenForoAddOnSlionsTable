@@ -1,5 +1,5 @@
 {
-    "src/addons/Slions/Table/addon.json": "d687bdc8e85164329ad6e1bf9aeda2581c949e62706072ae0aa520d033428e3d",
+    "src/addons/Slions/Table/addon.json": "5b05280565402ad964da00402f3c522478a4b77762640d88d3a8453acc264f3a",
     "src/addons/Slions/Table/Main.php": "6c78d44e442b8d81e667f39b9fc112c5e860101808dce2ca065ca15d21a28d81",
     "src/addons/Slions/Table/XF/BbCode/Renderer/EditorHtml.php": "5c8771bdd32b1f5f00fbf38a27515b74ce3830bb00e209ebc1156cf3d6246095",
     "src/addons/Slions/Table/XF/BbCode/Renderer/Html.php": "8fdb3c9c34070e4051b0800df45e298a1b545ce21c929eef663b5e5f3ee74255",
@@ -30,7 +30,7 @@
     "src/addons/Slions/Table/_data/style_properties.xml": "8b8690a8512f01f219dd2da76e3d0c5f62afc1f317b87794a7331c859c36a7a8",
     "src/addons/Slions/Table/_data/style_property_groups.xml": "68e1879cb3846c42d978487aa8d5145ff3335fc39e58016878824d5cf3fd684c",
     "src/addons/Slions/Table/_data/templates.xml": "95d4b078b90e74e773cef6695ef94c742e74b8d62e6798738f11f0215a58faee",
-    "src/addons/Slions/Table/_data/template_modifications.xml": "d213bef890e7acd53506fff163a271f49031a1209c99d873e6966a881193ffe9",
+    "src/addons/Slions/Table/_data/template_modifications.xml": "2d617d49e53660f7a1e688493499607bde4faf171de6ca749a71f0097a7acfd6",
     "src/addons/Slions/Table/_data/widget_definitions.xml": "37e46965256430f24004c2e7f08ba08f9b0d1cbcc4d70e84b3f4e3ffb713e64b",
     "src/addons/Slions/Table/_data/widget_positions.xml": "a29cee66134f6bc5d75ed9df1eef21096c24401915c5b5c774389c3d7bb2d5b3"
 }

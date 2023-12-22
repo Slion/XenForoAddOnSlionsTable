@@ -30,6 +30,16 @@ table.fr-dashed-borders th, table.fr-dashed-borders td {
 	border-style: dashed !important;
 }
 
+/* We don't want too small tables on mobile */
+@media (max-width: @xf-responsiveMedium)
+{
+    .bbTable table { 
+		width: 100% !important;
+		margin-left: 0% !important;
+		margin-right: 0% !important;
+	}
+}
+
 /* --- slions_table.css --- END */]]></replace>
   </modification>
   <modification type="public" template="editor" modification_key="slions_table_editor" description="Enable table editor buttons" execution_order="10" enabled="1" action="str_replace">
