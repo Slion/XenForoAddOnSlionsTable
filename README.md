@@ -10,15 +10,16 @@ Download from [XenForo.com].
 # Features
 
 - Add `TH` and `TD` BB code support for `colspan`, `rowspan`, and `style` options
-- Add `TABLE` BB code support for `style` options
+- Add `TABLE` BB code support for `style` and `class` options
 - Add WYSIWYG table editor cell button to merge or split table cells
 - Add WYSIWYG table editor cell background button to change cell color
 - Add WYSIWYG table editor resizing handle
+- Add WYSIWYG table editor style button: dashed borders and alternate rows
 
 # Usage
 
 ```
-[TABLE style='width: 50%;margin-left: auto;margin-right: auto;']
+[TABLE style='width: 50%;margin-left: auto;margin-right: auto;' class='fr-alternate-rows']
 [TR]
 [TH style='width: 26.8507%;'][CENTER]One[/CENTER][/TH]
 [TH colspan='2' style='width: 33.0302%;'][CENTER]Two & Three[/CENTER][/TH]
