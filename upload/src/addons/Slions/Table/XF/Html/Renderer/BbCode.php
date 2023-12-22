@@ -69,10 +69,26 @@ class BbCode extends XFCP_BbCode
 
 		$colspan = $tag->attribute('colspan');
 		$rowspan = $tag->attribute('rowspan');
+		$style = $tag->attribute('style');
+		$styles = "";
+
+		if ($style) 
+		{
+			// Rebuild our CSS styles
+			foreach ($style as $key => $value) {	
+                $styles .= "$key: $value;";             
+            }
+		}
+
 		// As BB code are usually displayed in uppercase	
 		$tagName = strtoupper($tag->tagName());
 
-		return "[$tagName" . (empty($colspan)?"":" colspan='$colspan'") . (empty($rowspan)?"":" rowspan='$rowspan'") . "]$text" . "[/$tagName]";
+		return "[$tagName" . 
+		(empty($colspan)?"":" colspan='$colspan'") . 
+		(empty($rowspan)?"":" rowspan='$rowspan'") . 
+		(empty($styles)?"":" style='$styles'") . 
+		//(empty($width)?"":" width='$width'") . 
+		"]$text" . "[/$tagName]";
 	}
 
 }

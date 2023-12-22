@@ -14,15 +14,13 @@ class Main
         //\XF::dump($tag);
         //\XF::dump($options);
 
-        //TODO: define map of valid attributes
-
-        //
+        //TODO: define set of valid attributes
         $cellOptions = "";
         if (is_array($tag['option'])) {
             // Build our HTML attribute such as colspan
-            // TODO: restrict to some attributes as with this one could inject JavaScript maybe
-            foreach ($tag['option'] as $key => $value) {				
-                $cellOptions .= "$key='$value' ";				
+            // TODO: restrict to some attributes as with this one could inject JavaScript I guess
+            foreach ($tag['option'] as $key => $value) {	
+                $cellOptions .= "$key='$value' ";
             }
             //$cellOptions = implode(' ', $tag['option']);
         }
