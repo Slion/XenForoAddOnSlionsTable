@@ -8,8 +8,13 @@ $(document).on('editor:config', function( aEvent, aConfig, aEditor) {
 	// Check before adding it otherwise we can accumulate them
 	if (!aConfig.tableEditButtons.includes('tableCells'))
 	{
+		aConfig.tableEditButtons.push('|');
 		// Add button to merge and split cells using colspan and rowspan
 		aConfig.tableEditButtons.push('tableCells');
+		// Add button to pick cell background color
+		aConfig.tableEditButtons.push('tableCellBackground');
+		// Enable resizing of table
+		aConfig.tableResizer = true;
 	}
 });	
 </xf:js>	
