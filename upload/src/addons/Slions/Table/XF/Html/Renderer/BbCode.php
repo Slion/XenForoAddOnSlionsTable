@@ -46,7 +46,29 @@ class BbCode extends XFCP_BbCode
 	}
 
 
-		/**
+	/**
+	 * Override base class function.
+     * Same implementation as overidden method with added styles support.
+	 */
+	public function handleTagTable($text, \XF\Html\Tag $tag)
+	{
+		$style = $tag->attribute('style');
+		$styles = "";
+
+		if ($style) 
+		{
+			// Rebuild our CSS styles
+			foreach ($style as $key => $value) {	
+                $styles .= "$key: $value;";             
+            }
+		}
+
+		$output = "[TABLE" . (empty($styles)?"":" style='$styles'")  ."]\n{$text}\n[/TABLE]";
+		return $this->renderCss($tag, $output);
+	}
+
+
+	/**
 	 * Handles heading tags.
 	 * This only works because we override that existing heading handler.
 	 * 

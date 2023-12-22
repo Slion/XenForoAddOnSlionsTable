@@ -35,11 +35,38 @@ class Html extends XFCP_Html
 	}
 
 	/**
-	 * Needed to make it public 
+	 * Override to inject attributes.
+	 * Needed to make it public.
 	 */	
 	public function renderFinalTableHtml($tableHtml, $tagOption, $extraContent)
 	{
-		return parent::renderFinalTableHtml($tableHtml, $tagOption, $extraContent);
+		$hasStyles = false;
+		$attributes = "";
+        if (is_array($tagOption)) {
+            // Build our HTML attribute such as style
+            // TODO: restrict to some attributes as with this one could inject JavaScript I guess
+            foreach ($tagOption as $key => $value) {	                
+				if ($key=='style') 
+				{
+					$hasStyles = true;
+					if (!str_contains($value,"width:"))
+					{
+						// No width specified, add 100% width then
+						$value .= ' width: 100%;';
+					}
+				}
+
+				$attributes .= "$key='$value' ";
+            }            
+        }
+
+		if (!$hasStyles) 
+		{
+			// Could this not be done with CSS using like table.bbCode class?
+			$attributes .= "style='width: 100%' ";
+		}
+
+		return "<div class=\"bbTable\">\n<table $attributes>$tableHtml</table>\n$extraContent</div>";
 	}
 
 	/**
