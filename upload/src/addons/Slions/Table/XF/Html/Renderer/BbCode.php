@@ -63,7 +63,9 @@ class BbCode extends XFCP_BbCode
             }
 		}
 
-		$output = "[TABLE" . (empty($styles)?"":" style='$styles'")  ."]\n{$text}\n[/TABLE]";
+		$class = $tag->attribute('class');
+
+		$output = "[TABLE" . (empty($styles)?"":" style='$styles'") . (empty($class)?"":" class='$class'") ."]\n{$text}\n[/TABLE]";
 		return $this->renderCss($tag, $output);
 	}
 
