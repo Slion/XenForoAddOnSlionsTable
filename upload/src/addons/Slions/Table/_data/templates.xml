@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <templates>
-  <template type="public" title="slions_table_core.less" version_id="2021317" version_string="2.2.13 Alpha 7"><![CDATA[/* --- slions_table.css --- BEGIN */
+  <template type="public" title="slions_table_core.less" version_id="2021318" version_string="2.2.13 Alpha 8"><![CDATA[/* --- slions_table.css --- BEGIN */
 
 /*
- Notably needed for alternate rows and dashed border styles
+ Notably needed for alternate rows and dashed border styles.
+ We had to use different selector for edit mode because it uses thead element
 */
 
-/* We had to use different selector for edit mode because it uses thead element */
-
-/* For Html render */
+/* Alternate row for Html render */
 div.bbTable table.fr-alternate-rows tbody tr:nth-child(odd) td {
-    background: @xf-contentAltBg;
+	.xf-bbCodeSlionsTableCellDataAlt();
 }
 
-/* Editor when no thead element */
+/* Alternate row for EditorHtml render when no thead element */
 .fr-view table.fr-alternate-rows tbody:first-child tr:nth-child(odd) td {
-    background: @xf-contentAltBg;	
+	.xf-bbCodeSlionsTableCellDataAlt();   
 }
 
-/* For EditorHtml render with thead element */
+/* Alternate row for EditorHtml render with thead element */
 .fr-view table.fr-alternate-rows thead + tbody tr:nth-child(even) td {
-    background: @xf-contentAltBg;	
+    .xf-bbCodeSlionsTableCellDataAlt();	
 }
 
 /* Dashed border */
@@ -28,7 +27,10 @@ table.fr-dashed-borders th, table.fr-dashed-borders td {
 	border-style: dashed !important;
 }
 
-/* We don't want too small tables on mobile */
+/* 
+We don't want too small tables on mobile.
+Force 100% table width on smaller viewport.
+*/
 @media (max-width: @xf-responsiveMedium)
 {
     .bbTable table { 
@@ -38,35 +40,21 @@ table.fr-dashed-borders th, table.fr-dashed-borders td {
 	}
 }
 
-/*
-.bbTable > table {
-  border: none;
-  border-collapse: collapse;
-  empty-cells: show;
-  max-width: 100%;
-}
-*/
 
+/* Table cell header styles for both Html and EditorHtml renders */
 div.fr-view > table > thead > tr > th,
 div.fr-view > table > tbody > tr > th,
 div.bbTable > table > thead > tr > th,
 div.bbTable > table > tbody > tr > th {
-  	background: @xf-contentAccentBg; /*mix(@xf-inputBgColor,@xf-chromeBg);*/
-  	color: @xf-textColorAccentContent;
-  	border: 1px solid @xf-borderColorFaint;
-  	/*border-bottom-color: mix(@xf-borderColorHighlight,@xf-borderColorFaint);*/
-  	border-bottom-color: @xf-textColorAttention;
-	border-bottom-width: 1px;
-  	/*padding: 3px;*/
+	.xf-bbCodeSlionsTableCellHeader();
 }
 
+/* Table cell data styles for both Html and EditorHtml renders */
 div.fr-view > table > thead > tr > td,
 div.fr-view > table > tbody > tr > td,
 div.bbTable > table > thead > tr > td,
 div.bbTable > table > tbody > tr > td {
-  /*background: #282828;*/
-  border: 1px solid @xf-borderColorFaint;
-  /*padding: 3px;*/
+	.xf-bbCodeSlionsTableCellData();
 }
 
 /* --- slions_table.css --- END */]]></template>

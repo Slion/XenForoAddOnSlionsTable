@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <phrases>
-  <phrase title="custom_bb_code_desc.table" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[]]></phrase>
-  <phrase title="custom_bb_code_desc.td" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[]]></phrase>
-  <phrase title="custom_bb_code_desc.th" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[]]></phrase>
-  <phrase title="custom_bb_code_desc.tr" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[]]></phrase>
-  <phrase title="custom_bb_code_example.table" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[]]></phrase>
-  <phrase title="custom_bb_code_example.td" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[]]></phrase>
-  <phrase title="custom_bb_code_example.th" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[]]></phrase>
-  <phrase title="custom_bb_code_example.tr" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[]]></phrase>
-  <phrase title="custom_bb_code_output.table" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[]]></phrase>
-  <phrase title="custom_bb_code_output.td" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[]]></phrase>
-  <phrase title="custom_bb_code_output.th" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[]]></phrase>
-  <phrase title="custom_bb_code_output.tr" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[]]></phrase>
-  <phrase title="custom_bb_code_title.table" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[Table]]></phrase>
-  <phrase title="custom_bb_code_title.td" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[Table data]]></phrase>
-  <phrase title="custom_bb_code_title.th" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[Table header]]></phrase>
-  <phrase title="custom_bb_code_title.tr" version_id="2021311" version_string="2.2.13 Alpha 1"><![CDATA[Table row]]></phrase>
+  <phrase title="style_prop.bbCodeSlionsTableCellData" version_id="2021318" version_string="2.2.13 Alpha 8"><![CDATA[Slions table - cell data]]></phrase>
+  <phrase title="style_prop.bbCodeSlionsTableCellDataAlt" version_id="2021318" version_string="2.2.13 Alpha 8"><![CDATA[Slions table - cell data alternate]]></phrase>
+  <phrase title="style_prop.bbCodeSlionsTableCellHeader" version_id="2021318" version_string="2.2.13 Alpha 8"><![CDATA[Slions table - cell header]]></phrase>
+  <phrase title="style_prop_desc.bbCodeSlionsTableCellData" version_id="2021318" version_string="2.2.13 Alpha 8"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.bbCodeSlionsTableCellDataAlt" version_id="2021318" version_string="2.2.13 Alpha 8"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.bbCodeSlionsTableCellHeader" version_id="2021318" version_string="2.2.13 Alpha 8"><![CDATA[]]></phrase>
 </phrases>

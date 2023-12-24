@@ -1,2 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<style_properties/>
+<style_properties>
+  <style_property property_name="bbCodeSlionsTableCellData" group_name="bbCode" title="Slions table - cell data" property_type="css" display_order="28100" css_components="text,background,border,border_radius,padding,extra">
+    <value>[]</value>
+  </style_property>
+  <style_property property_name="bbCodeSlionsTableCellDataAlt" group_name="bbCode" title="Slions table - cell data alternate" property_type="css" display_order="28100" css_components="text,background,border,border_radius,padding,extra">
+    <value>{
+    "background-color": "@xf-contentAltBg"
+}</value>
+  </style_property>
+  <style_property property_name="bbCodeSlionsTableCellHeader" group_name="bbCode" title="Slions table - cell header" property_type="css" display_order="28100" css_components="text,background,border,border_radius,padding,extra">
+    <value>{
+    "background-color": "@xf-contentAccentBg",
+    "border-bottom-width": "1px",
+    "border-bottom-color": "@xf-borderColorAttention"
+}</value>
+  </style_property>
+</style_properties>
