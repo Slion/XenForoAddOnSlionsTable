@@ -2,76 +2,11 @@
 <template_modifications>
   <modification type="public" template="core.less" modification_key="slions_table_styles" description="Table styles" execution_order="10" enabled="1" action="preg_replace">
     <find><![CDATA[/$/]]></find>
-    <replace><![CDATA[/* --- slions_table.css --- BEGIN */
-
-/*
- Notably needed for alternate rows and dashed border styles
-*/
-
-/* We had to use different selector for edit mode because it uses thead element */
-
-/* For Html render */
-div.bbTable table.fr-alternate-rows tbody tr:nth-child(odd) td {
-    background: @xf-contentAltBg;
-}
-
-/* Editor when no thead element */
-.fr-view table.fr-alternate-rows tbody:first-child tr:nth-child(odd) td {
-    background: @xf-contentAltBg;	
-}
-
-/* For EditorHtml render with thead element */
-.fr-view table.fr-alternate-rows thead + tbody tr:nth-child(even) td {
-    background: @xf-contentAltBg;	
-}
-
-/* Dashed border */
-table.fr-dashed-borders th, table.fr-dashed-borders td {
-	border-style: dashed !important;
-}
-
-/* We don't want too small tables on mobile */
-@media (max-width: @xf-responsiveMedium)
-{
-    .bbTable table { 
-		width: 100% !important;
-		margin-left: 0% !important;
-		margin-right: 0% !important;
-	}
-}
-
-/* --- slions_table.css --- END */]]></replace>
+    <replace><![CDATA[{{ include('slions_table_core.less') }}]]></replace>
   </modification>
   <modification type="public" template="editor" modification_key="slions_table_editor" description="Enable table editor buttons" execution_order="10" enabled="1" action="str_replace">
     <find><![CDATA[<!--[XF:include_js]-->]]></find>
-    <replace><![CDATA[<xf:js>
-$(document).on('editor:config', function( aEvent, aConfig, aEditor) {
-	//console.log(aConfig);
-	// Check before adding it otherwise we can accumulate them
-	if (!aConfig.tableEditButtons.includes('tableCells'))
-	{
-		// Just override as we did not like the default order		
-		aConfig.tableEditButtons = 
-		[
-			'tableRemove', 'tableHeader', 'tableStyle',
-			'|', 'tableRows', 'tableColumns',
-			'|', 'tableCells', 'tableCellBackground',
-		],
-		// Though ideally and to play with other AddOn or core changes we should just add stuff
-		//aConfig.tableEditButtons.push('|');
-		// Add button to merge and split cells using colspan and rowspan
-		//aConfig.tableEditButtons.push('tableCells');
-		// Add button to pick cell background color
-		//aConfig.tableEditButtons.push('tableCellBackground');
-		//
-		//aConfig.tableEditButtons.push('|');
-		//aConfig.tableEditButtons.push('tableStyle');
-	
-		// Enable resizing of table
-		aConfig.tableResizer = true;
-	}
-});	
-</xf:js>	
+    <replace><![CDATA[<xf:include template="slions_table_editor" />	
 <!--[XF:include_js]-->]]></replace>
   </modification>
 </template_modifications>
