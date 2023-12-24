@@ -15,4 +15,10 @@
     "border-bottom-color": "@xf-borderColorAttention"
 }</value>
   </style_property>
+  <style_property property_name="bbCodeSlionsTableEditButtons" group_name="bbCode" title="Table edition buttons" description="Space separated list of table edit buttons. Possible value are:&#10;tableHeader, tableRemove, tableRows, tableColumns, tableStyle, tableCells, tableCellBackground tableCellVerticalAlign, tableCellHorizontalAlign, tableCellStyle. Use | or - as separators." property_type="value" value_type="string" value_group="Slions_Table" display_order="281000">
+    <value>"tableHeader tableStyle | tableRows tableColumns | tableCellBackground tableCellHorizontalAlign tableCells"</value>
+  </style_property>
+  <style_property property_name="bbCodeSlionsTableResizer" group_name="bbCode" title="Resizable tables" description="Show or hide table resizer handle" property_type="value" value_type="boolean" value_group="Slions_Table" display_order="28100">
+    <value>1</value>
+  </style_property>
 </style_properties>

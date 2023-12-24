@@ -1,5 +1,5 @@
 {
-    "src/addons/Slions/Table/addon.json": "0436e6143c99e0c18bc5cddfcdc45949cb18780178e35394a0aab1749ebf0009",
+    "src/addons/Slions/Table/addon.json": "aae3fd09e8623b161a40245431651cfdec0e04005c75e7b3985b18882cf59d1e",
     "src/addons/Slions/Table/Main.php": "6c78d44e442b8d81e667f39b9fc112c5e860101808dce2ca065ca15d21a28d81",
     "src/addons/Slions/Table/XF/BbCode/Renderer/EditorHtml.php": "5c8771bdd32b1f5f00fbf38a27515b74ce3830bb00e209ebc1156cf3d6246095",
     "src/addons/Slions/Table/XF/BbCode/Renderer/Html.php": "8fdb3c9c34070e4051b0800df45e298a1b545ce21c929eef663b5e5f3ee74255",
@@ -25,11 +25,11 @@
     "src/addons/Slions/Table/_data/option_groups.xml": "154d7a89664b243d0bd8227c22e241f934bf7e196c83230ee23d3c0c4fba1333",
     "src/addons/Slions/Table/_data/permissions.xml": "7e4fc7d5826733d15ea2d8936b9bdd41afcaad810eb38e50da3c8d8eafda1550",
     "src/addons/Slions/Table/_data/permission_interface_groups.xml": "3177224e96458b829aa7fb24866dda9e0455a4922aee3d669b53f59a1ffdf5d1",
-    "src/addons/Slions/Table/_data/phrases.xml": "92b8a1c99ea7990de948b0c085172070f85118f93d3cd5618d39592158124677",
+    "src/addons/Slions/Table/_data/phrases.xml": "db13f3c7a00276bc9114b71588a75745b1bb971a57b633418a5e9c02ba85bd77",
     "src/addons/Slions/Table/_data/routes.xml": "550fa64f9feedf137dd877b38c2684f94474619d2d83890dbb717a91b50da8f5",
-    "src/addons/Slions/Table/_data/style_properties.xml": "03dd3e0854901d3903e05fa666cc22fbf1cb6ef896614dff0e7e2ff0eeffdab8",
+    "src/addons/Slions/Table/_data/style_properties.xml": "f8b53c0e1a6517db3c548d417a82497a4f3b7e04e8f5c8e6afb87239a8ee1969",
     "src/addons/Slions/Table/_data/style_property_groups.xml": "68e1879cb3846c42d978487aa8d5145ff3335fc39e58016878824d5cf3fd684c",
-    "src/addons/Slions/Table/_data/templates.xml": "d4f9a2f768fb6a260149956fa8613a2e33559d530055f87f8c3a6d6e2fea0423",
+    "src/addons/Slions/Table/_data/templates.xml": "f9c27d5ad5c96f6d8727f261c132d238d0cb335ab358b6cb8b426bdbc5989c99",
     "src/addons/Slions/Table/_data/template_modifications.xml": "48423c33ca2546e8af1db0c370cb000df34675bd60c668def4d5c628d248c920",
     "src/addons/Slions/Table/_data/widget_definitions.xml": "37e46965256430f24004c2e7f08ba08f9b0d1cbcc4d70e84b3f4e3ffb713e64b",
     "src/addons/Slions/Table/_data/widget_positions.xml": "a29cee66134f6bc5d75ed9df1eef21096c24401915c5b5c774389c3d7bb2d5b3"

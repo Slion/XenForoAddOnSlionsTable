@@ -58,32 +58,17 @@ div.bbTable > table > tbody > tr > td {
 }
 
 /* --- slions_table.css --- END */]]></template>
-  <template type="public" title="slions_table_editor" version_id="2021317" version_string="2.2.13 Alpha 7"><![CDATA[<xf:js>
+  <template type="public" title="slions_table_editor" version_id="2021331" version_string="2.2.13 Beta 1"><![CDATA[<xf:js>
 $(document).on('editor:config', function( aEvent, aConfig, aEditor) {
 	//console.log(aConfig);
-	// Check before adding it otherwise we can accumulate them
-	if (!aConfig.tableEditButtons.includes('tableCells'))
-	{
-		// Just override as we did not like the default order		
-		aConfig.tableEditButtons = 
-		[
-			'tableRemove', 'tableHeader', 'tableStyle',
-			'|', 'tableRows', 'tableColumns',
-			'|', 'tableCells', 'tableCellBackground',
-		],
-		// Though ideally and to play with other AddOn or core changes we should just add stuff
-		//aConfig.tableEditButtons.push('|');
-		// Add button to merge and split cells using colspan and rowspan
-		//aConfig.tableEditButtons.push('tableCells');
-		// Add button to pick cell background color
-		//aConfig.tableEditButtons.push('tableCellBackground');
-		//
-		//aConfig.tableEditButtons.push('|');
-		//aConfig.tableEditButtons.push('tableStyle');
-	
-		// Enable resizing of table
-		aConfig.tableResizer = true;
-	}
+
+	// Get user defined table edit buttons from style property
+	const editButtons = '{{ property('bbCodeSlionsTableEditButtons') }}';
+	// Put them into an array and trim them
+	aConfig.tableEditButtons = editButtons.split(" ").map(function(item) {return item.trim();});
+
+	// Enable resizing of table
+	aConfig.tableResizer = {{ property('bbCodeSlionsTableResizer') }};	
 });	
 </xf:js>]]></template>
 </templates>
