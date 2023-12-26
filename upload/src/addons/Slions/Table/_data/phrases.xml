@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <phrases>
-  <phrase title="style_prop.bbCodeSlionsTableCellData" version_id="2021318" version_string="2.2.13 Alpha 8"><![CDATA[Slions table - cell data]]></phrase>
-  <phrase title="style_prop.bbCodeSlionsTableCellDataAlt" version_id="2021318" version_string="2.2.13 Alpha 8"><![CDATA[Slions table - cell data alternate]]></phrase>
-  <phrase title="style_prop.bbCodeSlionsTableCellHeader" version_id="2021318" version_string="2.2.13 Alpha 8"><![CDATA[Slions table - cell header]]></phrase>
-  <phrase title="style_prop.bbCodeSlionsTableEditButtons" version_id="2021331" version_string="2.2.13 Beta 1"><![CDATA[Table edition buttons]]></phrase>
-  <phrase title="style_prop.bbCodeSlionsTableResizer" version_id="2021331" version_string="2.2.13 Beta 1"><![CDATA[Resizable tables]]></phrase>
-  <phrase title="style_prop_desc.bbCodeSlionsTableCellData" version_id="2021318" version_string="2.2.13 Alpha 8"><![CDATA[]]></phrase>
-  <phrase title="style_prop_desc.bbCodeSlionsTableCellDataAlt" version_id="2021318" version_string="2.2.13 Alpha 8"><![CDATA[]]></phrase>
-  <phrase title="style_prop_desc.bbCodeSlionsTableCellHeader" version_id="2021318" version_string="2.2.13 Alpha 8"><![CDATA[]]></phrase>
-  <phrase title="style_prop_desc.bbCodeSlionsTableEditButtons" version_id="2021331" version_string="2.2.13 Beta 1"><![CDATA[Space separated list of table edit buttons. Possible value are:
+  <phrase title="style_prop.slionsTableCellData" version_id="2021332" version_string="2.2.13 Beta 2"><![CDATA[Slions table - cell data]]></phrase>
+  <phrase title="style_prop.slionsTableCellDataAlt" version_id="2021332" version_string="2.2.13 Beta 2"><![CDATA[Slions table - cell data alternate]]></phrase>
+  <phrase title="style_prop.slionsTableCellHeader" version_id="2021332" version_string="2.2.13 Beta 2"><![CDATA[Slions table - cell header]]></phrase>
+  <phrase title="style_prop.slionsTableEditButtons" version_id="2021332" version_string="2.2.13 Beta 2"><![CDATA[Table edition buttons]]></phrase>
+  <phrase title="style_prop.slionsTableResizer" version_id="2021332" version_string="2.2.13 Beta 2"><![CDATA[Resizable tables]]></phrase>
+  <phrase title="style_prop_desc.slionsTableCellData" version_id="2021332" version_string="2.2.13 Beta 2"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.slionsTableCellDataAlt" version_id="2021332" version_string="2.2.13 Beta 2"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.slionsTableCellHeader" version_id="2021332" version_string="2.2.13 Beta 2"><![CDATA[]]></phrase>
+  <phrase title="style_prop_desc.slionsTableEditButtons" version_id="2021332" version_string="2.2.13 Beta 2"><![CDATA[Space separated list of table edit buttons. Possible value are:
 tableHeader, tableRemove, tableRows, tableColumns, tableStyle, tableCells, tableCellBackground tableCellVerticalAlign, tableCellHorizontalAlign, tableCellStyle. Use | or - as separators.]]></phrase>
-  <phrase title="style_prop_desc.bbCodeSlionsTableResizer" version_id="2021331" version_string="2.2.13 Beta 1"><![CDATA[Show or hide table resizer handle]]></phrase>
+  <phrase title="style_prop_desc.slionsTableResizer" version_id="2021332" version_string="2.2.13 Beta 2"><![CDATA[Show or hide table resizer handle]]></phrase>
+  <phrase title="style_prop_group.slions_table" version_id="2021332" version_string="2.2.13 Beta 2"><![CDATA[Slions - Table]]></phrase>
+  <phrase title="style_prop_group_desc.slions_table" version_id="2021332" version_string="2.2.13 Beta 2"><![CDATA[Styles properties for Slions Table Add-On]]></phrase>
 </phrases>
