@@ -59,16 +59,17 @@ div.bbTable > table > tbody > tr > td {
 
 /* --- slions_table.css --- END */]]></template>
   <template type="public" title="slions_table_editor" version_id="2021332" version_string="2.2.13 Beta 2"><![CDATA[<xf:js>
-$(document).on('editor:config', function( aEvent, aConfig, aEditor) {
-	//console.log(aConfig);
+XF.on(document, "editor:config", event => {
+    const { config, editor } = event;
 
-	// Get user defined table edit buttons from style property
-	const editButtons = '{{ property('slionsTableEditButtons') }}';
-	// Put them into an array and trim them
-	aConfig.tableEditButtons = editButtons.split(" ").map(function(item) {return item.trim();});
-
-	// Enable resizing of table
-	aConfig.tableResizer = {{ property('slionsTableResizer') }};	
+    // Get user defined table edit buttons from style property
+    const editButtons = '{{ property('slionsTableEditButtons') }}';
+    
+    // Put them into an array and trim them
+    config.tableEditButtons = editButtons.split(" ").map(item => item.trim());
+    
+    // Enable resizing of table
+    config.tableResizer = {{ property('slionsTableResizer') }};
 });	
 </xf:js>]]></template>
 </templates>
